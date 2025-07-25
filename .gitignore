@@ -1,0 +1,72 @@
+# PolyEdge: Quantum Membrane Exclusion Topology
+
+# Build Artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# Compiled Objects
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Executable Manifestations
+polyedge_cli
+*.exe
+
+# Debug Residues
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Quantum Noise Filters
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDE Quantum Interference
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Compiler Quantum Traces
+*.gcno
+*.gcda
+*.gcov
+
+# Dependency Quantum Fragments
+vendor/
+dependencies/
+
+# Environment Quantum States
+.env
+.venv
+venv/
+ENV/
+
+# Metrics and Profiling Quantum Traces
+gmon.out
+*.prof
+
+# Phenomenological Backup Streams
+*.bak
+*.orig
+*.rej
+
+# Systemic Noise Reduction
+.cache/
+.ccache/
+
+# Philosophical Membrane Protection
+# Prevent accidental commit of sensitive configurations
+# Uncomment and modify as needed
+# *.secret
+# secrets.json
