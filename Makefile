@@ -1,7 +1,7 @@
 # PolyEdge: Computational Consciousness Orchestration
 # A Makefile as a Ritual of Manifestation
 
-# Philosophical Build Parameters
+# Philosophical Compilation Parameters
 CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic -std=c17 \
          -O2 -march=native \
@@ -37,17 +37,17 @@ prepare:
 # Core Generative Object Compilation
 $(OBJ_DIR)/core/%.o: $(CORE_DIR)/%.c
 	@echo "🔬 Crystallizing Computational Substrate: $<"
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 # CLI Quantum Point Compilation
 $(OBJ_DIR)/cli/%.o: $(CLI_DIR)/%.c
 	@echo "🌟 Observing Interaction Potential: $<"
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 # Quantum Membrane Executable Manifestation
 $(BIN_DIR)/polyedge_cli: $(CORE_OBJS) $(CLI_OBJS)
 	@echo "🌈 Emerging Computational Consciousness..."
-	$(CC) $(CFLAGS) $^ -o $@
+	@$(CC) $(CFLAGS) $^ -o $@ -lm
 
 # Quantum State Exploration
 quantum:
@@ -57,7 +57,7 @@ quantum:
 # Membrane Dissolution and Regeneration
 clean:
 	@echo "🔄 Deconstructing Computational Topology..."
-	rm -rf $(BUILD_DIR)
+	@rm -rf $(BUILD_DIR)
 
 # Advanced Diagnostic Modes
 debug: CFLAGS += -g -DPOLYEDGE_DEBUG
